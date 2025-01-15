@@ -1,0 +1,270 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#toggle,
+#un {
+}
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-picture img {
+  width: 50px;
+  height: max-content;
+}
+.profile-picture {
+  display: flex;
+  gap: 20px;
+}
+.profile-picture h4 {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.overlay-content {
+  background: white;
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+.overlay-content img {
+  width: 20%;
+}
+
+#toggle:checked ~ .overlay {
+  display: flex;
+}
+
+#un:checked ~ .overlay {
+  display: none;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.card {
+  color: white;
+  border-radius: 10px;
+  background-image: url(bg3.jpg);
+  background-size: contain;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 23%;
+  text-align: center;
+}
+.card h3 {
+  margin: 0;
+  font-size: 24px;
+}
+.card p {
+  margin: 5px 0;
+  color: #999;
+}
+.card .compare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.card .compare i {
+  margin-right: 5px;
+}
+.arrow-up {
+  color: #4caf50;
+}
+.arrow-down {
+  color: #f44336;
+}
+.order-list {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.order-list h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+.order-list p {
+  margin: 0 0 20px 0;
+  color: #888;
+}
+.order-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.order-list table th,
+.order-list table td {
+  padding: 15px;
+  text-align: left;
+}
+.order-list table th {
+  background-color: #e9eff8;
+  color: #555;
+}
+.order-list table td {
+  border-bottom: 1px solid #f0f0f0;
+}
+.order-list .status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.status-new {
+  background-color: #e0f7fa;
+  color: #00acc1;
+}
+.status-onprocess {
+  background-color: #fff3e0;
+  color: #fb8c00;
+}
+.status-done {
+  background-color: #e8f5e9;
+  color: #43a047;
+}
+
+.tanggal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.tanggal button {
+  background-color: #e0f7fa;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #00acc1;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.tanggal button i {
+  margin-right: 5px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  width: 23%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+footer {
+  background-color: #f5f7fa;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0px;
+  position: relative;
+  margin-bottom: 0px;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #333;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
