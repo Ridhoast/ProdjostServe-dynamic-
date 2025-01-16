@@ -1,8 +1,9 @@
 <?php
+// isi pake server lokal lu
 $host = 'localhost';
 $user = 'root';
-$password = '@Adtraarr404';
-$database = 'sistem_peminjaman';
+$password = '';
+$database = '';
 
 $conn = new mysqli($host, $user, $password, $database);
 if ($conn->connect_error) {
